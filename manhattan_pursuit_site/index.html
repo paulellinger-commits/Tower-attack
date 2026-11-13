@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Manhattan Pursuit – ein kleines Arcade-Flugspiel im Browser.">
+  <title>Manhattan Pursuit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Manhattan Pursuit Startseite"><span class="brand-mark">MP</span><span>MANHATTAN <b>PURSUIT</b></span></a>
+      <span class="top-tag">BROWSER ARCADE · DEMO</span>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> NEW YORK CITY · EMERGENCY FLIGHT</p>
+        <h1>ONE CITY.<br><em>ONE LAST</em> FLIGHT.</h1>
+        <p class="intro">Fliege durch die Skyline von Manhattan. Überstehe den ersten Einschlag – und entkomme anschließend der Verfolgungsjagd.</p>
+        <div class="quick-controls"><span><kbd>SPACE</kbd> / <kbd>↑</kbd> Fliegen</span><span><kbd>TOUCH</kbd> Tippen</span></div>
+      </div>
+      <div class="game-frame">
+        <div class="frame-bar"><span><i></i><i></i><i></i></span><b>LIVE FLIGHT FEED</b><span class="frame-status">● SYSTEM ONLINE</span></div>
+        <div id="game-container">
+          <div class="start-screen" id="start-screen">
+            <div class="start-kicker">ARCADE FLIGHT SIMULATION</div>
+            <h2>READY<br>FOR TAKEOFF?</h2>
+            <p>Weiche den Wolkenkratzern aus. Nach dem ersten Treffer beginnt die Jagd.</p>
+            <button id="play-button" type="button">START FLIGHT <span>↗</span></button>
+            <small>SPACE / ↑ / KLICK / TOUCH</small>
+          </div>
+        </div>
+        <div class="frame-footer"><span>FLIGHT STATUS: <b id="status-label">STANDBY</b></span><span>SCORE <b id="score-label">000</b></span></div>
+      </div>
+    </section>
+
+    <section class="info-row">
+      <article><span class="info-number">01</span><div><h3>STAY AIRBORNE</h3><p>Tippe oder drücke eine Taste, um Höhe zu gewinnen.</p></div></article>
+      <article><span class="info-number">02</span><div><h3>SURVIVE THE IMPACT</h3><p>Der erste Turmtreffer beschädigt dein Flugzeug – aber der Flug ist noch nicht vorbei.</p></div></article>
+      <article><span class="info-number">03</span><div><h3>LOSE THE PURSUIT</h3><p>Mehrere Militärflugzeuge nehmen die Verfolgung auf. Halte so lange wie möglich durch.</p></div></article>
+    </section>
+    <footer><span>MANHATTAN PURSUIT</span><span>MADE WITH p5.js · PERSONAL GAME PROJECT</span></footer>
+  </main>
+  <script src="sketch.js"></script>
+</body>
+</html>
